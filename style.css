@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(104, 153, 199);
+}
+
+h1{
+    text-align: center;
+}
+.mainparent{
+    /*   flex properties for parent   */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    column-gap: 5px;
+
+    
+    
+}
+.result{
+    /*   flex properties for child   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 80px;
+    border-style: solid rgb(39, 38, 38);
+
+}
+.items{
+    /*   flex properties for child   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+
+    justify-content: center;
+    gap: 2px;
+    border-style: solid;
+    /*grid-area: Total-size;*/
+    
+    background-color:rgb(90, 79, 79);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "clear clean per off"
+    "no-1 no-2 no-3 multi"
+    "no-4 no-5 no-6 sub"
+    "no-7 no-8 no-9 add"
+    "zero dot div ans";
+
+}
+
+.items > *{
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+
+}
+
+.clear{
+    background-color: white;
+    grid-area: clear;
+}
+.clean{
+    background-color: white;
+    grid-area: clean;
+}
+.per{
+    background-color: white;
+    grid-area: per;
+}
+.off{
+    background-color: white;
+    grid-area: off;
+}
+
+.no-1{
+    background-color: white;
+    grid-area: no-1;
+}
+.no-2{
+    background-color: white;
+    grid-area: no-2;
+
+}
+.no-3{
+    background-color: white;
+    grid-area: no-3;
+
+}
+.multi{
+    background-color: white;
+    grid-area: multi;
+
+}
+.no-4{
+    background-color: white;
+    grid-area: no-4;
+}
+.no-5{
+    background-color: white;
+    grid-area: no-5;
+
+}
+.no-6{
+    background-color: white;
+    grid-area: no-6;
+
+}
+.sub{
+    background-color: white;
+    grid-area: sub;
+}
+.no-7{
+    background-color: white;
+    grid-area: no-7;
+}
+.no-8{
+    background-color: white;
+    grid-area: no-8;
+}
+.no-9{
+    background-color: white;
+    grid-area: no-9;
+}
+.add{
+    background-color: white;
+    grid-area: add;
+}
+.zero{
+    background-color: white;
+    grid-area: zero;
+}
+.dot{
+    background-color: white;
+    grid-area: dot;
+}
+.div{
+    background-color: white;
+    grid-area: div;
+}
+.ans{
+    background-color: white;
+    grid-area: ans;
+}
+
+
